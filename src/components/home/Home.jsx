@@ -1,10 +1,9 @@
 import './home.css'
 import Typewriter from 'typewriter-effect';
 
-
-export default function Header() {
+export default function Home() {
     return (
-        <div className='home'>
+        <div className='home' id="Home">
             <div className="home_top">
                 <div>Hi, I'm</div>
                 <div>Dariu Szewski</div>                
