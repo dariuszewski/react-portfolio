@@ -91,7 +91,7 @@ function Navbar() {
             component="a"
             href="#Home"
             sx={{
-              ml: 36,
+              mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'monospace',
