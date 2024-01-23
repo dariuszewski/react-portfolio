@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import './carousel.css'
 import MediaCard from './Card';
 
 
@@ -55,11 +54,7 @@ export default function CarouselRatio() {
         {loading ? (
                 <span>Loading...</span>
             ) : (
-                <ul>
-                    <li>{profile.avatar_url}</li>
-                    <li>{profile.html_url}</li>
-                    <li>{profile.public_repos}</li>
-                </ul>
+              <MediaCard />
             )}
 
         </Carousel>
