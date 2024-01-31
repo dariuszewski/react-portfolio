@@ -1,36 +1,59 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
-import './card.css'
+import "./card.css";
+import { Description } from "@mui/icons-material";
 
-export default function MediaCard() {
+export default function MediaCard({
+  repoName,
+  description,
+  language,
+  html_url,
+  demo,
+}) {
+  const handleButtonClick = (url) => {
+    window.open(url, "_blank"); // Opens the provided URL in a new tab
+  };
+
   return (
-    <div className='card-frame'>
-        <Card sx={{ maxWidth: '90%', backgroundImage: 'linear-gradient(to top, rgb(33, 33, 33), rgb(10, 0, 48))' }}>
+    <div className="card-frame">
+      <Card
+        sx={{
+          maxWidth: "95%",
+          backgroundImage:
+            "linear-gradient(to top, rgb(33, 33, 33), rgb(10, 0, 48))",
+        }}
+      >
         <CardMedia
-            sx={{ height: 140 }}
-            image="src/assets/projects/flaskr_blog.png"
-            title="green iguana"
+          sx={{ height: 240 }}
+          image={`src/assets/projects/${repoName}.png`}
+          title="green iguana"
         />
         <CardContent>
-            <Typography gutterBottom variant="h5" component="div" color="#ffffff"> 
-            Lizard
-            </Typography>
-            <Typography variant="body2" color="#ffffff">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-            </Typography>
+          <div className="language">{language}</div>
+          <Typography gutterBottom variant="h6" component="div" color="#ffffff">
+            {repoName}
+          </Typography>
+          <Typography variant="body2" color="#ffffff">
+            {description}
+          </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+          <Button size="small" onClick={() => handleButtonClick(html_url)}>
+            GITHUB
+          </Button>
+          {demo && (
+            <Button size="small" onClick={() => handleButtonClick(demo)}>
+              DEMO
+            </Button>
+          )}
         </CardActions>
-        </Card>
+      </Card>
     </div>
   );
 }

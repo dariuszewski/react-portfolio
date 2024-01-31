@@ -1,14 +1,19 @@
-
 .card-frame {
     width: 100%;
     margin-left: 20px;
+}
 
+.language {
+    color: white;
+    font-size: 10px;
+    text-align: right;
+    right: 10px;
 }
 
 @media only screen and (max-width: 1024px) {
     .card-frame {
         width: 100%;
         margin-left: auto;
-    
+
     }
 }
