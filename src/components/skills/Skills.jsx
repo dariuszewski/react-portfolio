@@ -28,6 +28,10 @@ import ZoomInRoundedIcon from "@mui/icons-material/ZoomInRounded";
 import SpatialTrackingRoundedIcon from "@mui/icons-material/SpatialTrackingRounded";
 import SettingsVoiceRoundedIcon from "@mui/icons-material/SettingsVoiceRounded";
 
+import { LuLanguages } from "react-icons/lu";
+
+import "./Skills.css";
+
 export default function Skills() {
   return (
     <div id="Skills">
@@ -36,9 +40,9 @@ export default function Skills() {
         variant="plain"
         transition="0.2s"
         sx={{
-          width: { xs: "100%", sm: "80%" }, // 100% width on xs devices, and 80% starting from sm devices
+          width: { xs: "100%", sm: "100%" }, // 100% width on xs devices, and 80% starting from sm devices
           margin: "auto", // Automatically adjust margin to center the accordion
-          mx: { xs: "0%", sm: "10%" }, // 0% horizontal margin on xs, 10% starting from sm devices
+          mx: { xs: "0%", sm: "0%" }, // 0% horizontal margin on xs, 10% starting from sm devices
           borderRadius: "md",
           [`& .${accordionDetailsClasses.content}.${accordionDetailsClasses.expanded}`]:
             {
@@ -52,13 +56,13 @@ export default function Skills() {
         <Accordion>
           <AccordionSummary>
             <Avatar color="primary">
-              <TapAndPlayRoundedIcon />
+              <LuLanguages />
             </Avatar>
             <ListItemContent>
-              <Typography level="title-md">Connections</Typography>
-              <Typography level="body-sm">
-                Activate or deactivate your connections
+              <Typography level="title-md" color="#ffffff">
+                Languages
               </Typography>
+              <Typography level="body-sm">Languages I speak</Typography>
             </ListItemContent>
           </AccordionSummary>
           <AccordionDetails>
@@ -66,7 +70,6 @@ export default function Skills() {
               <FormControl orientation="horizontal" sx={{ gap: 1 }}>
                 <AirplanemodeActiveRoundedIcon fontSize="xl2" sx={{ mx: 1 }} />
                 <FormLabel>Airplane Mode</FormLabel>
-                <Switch size="sm" />
               </FormControl>
 
               <FormControl orientation="horizontal" sx={{ gap: 1 }}>
