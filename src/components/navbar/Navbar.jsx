@@ -26,7 +26,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="fixed" color="transparent">
+    <AppBar position="fixed" sx={{ backgroundColor: "#0a0030" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -78,7 +78,7 @@ function Navbar() {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <a className="navbar-link" href={"#" + page}>
+                    <a className="Navbar-link" href={"#" + page}>
                       {page}
                     </a>
                   </Typography>
