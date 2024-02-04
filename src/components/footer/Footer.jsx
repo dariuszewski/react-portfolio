@@ -1,22 +1,58 @@
 import { Box, Divider, IconButton } from "@mui/material";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import DeveloperModeIcon from "@mui/icons-material/DeveloperMode"; // Assuming this for Stack Overflow
+import {
+  FaWhatsapp,
+  FaLinkedin,
+  FaStackOverflow,
+  FaGithub,
+} from "react-icons/fa";
 
 export default function Footer() {
+  // wa
+  const whatsAppNumber = "1234567890";
+  const whatsAppLink = `https://wa.me/${whatsAppNumber}`;
+  // li
+  const linkedInUrl = "https://www.linkedin.com/in/yourusername";
+  // sa
+  const stackOverflowUrl =
+    "https://stackoverflow.com/users/youruserid/yourusername";
+  // gh
+  const githubUrl = "https://github.com/dariuszewski";
+
   return (
     <div>
       <Divider sx={{ my: 4, bgcolor: "white" }} />
       <Box sx={{ textAlign: "center", pb: 4, color: "white" }}>
-        <IconButton sx={{ fontSize: "2rem", mx: 2, color: "white" }}>
-          <WhatsAppIcon fontSize="inherit" />
+        <IconButton
+          sx={{ fontSize: "2rem", mx: 2, color: "white" }}
+          component="a"
+          href={whatsAppLink}
+          target="_blank"
+        >
+          <FaWhatsapp fontSize="inherit" />
         </IconButton>
-        <IconButton sx={{ fontSize: "2rem", mx: 2, color: "white" }}>
-          <LinkedInIcon fontSize="inherit" />
+        <IconButton
+          sx={{ fontSize: "2rem", mx: 2, color: "white" }}
+          component="a"
+          href={linkedInUrl}
+          target="_blank"
+        >
+          <FaLinkedin fontSize="inherit" />
         </IconButton>
-        <IconButton sx={{ fontSize: "2rem", mx: 2, color: "white" }}>
-          <DeveloperModeIcon fontSize="inherit" />{" "}
-          {/* This icon is used as an example for Stack Overflow */}
+        <IconButton
+          sx={{ fontSize: "2rem", mx: 2, color: "white" }}
+          component="a"
+          href={stackOverflowUrl}
+          target="_blank"
+        >
+          <FaStackOverflow fontSize="inherit" />
+        </IconButton>
+        <IconButton
+          sx={{ fontSize: "2rem", mx: 2, color: "white" }}
+          component="a"
+          href={githubUrl}
+          target="_blank"
+        >
+          <FaGithub fontSize="inherit" />
         </IconButton>
       </Box>
     </div>
