@@ -42,10 +42,6 @@
         min-height: 100vh;
     }
 
-    .About_title {
-        margin-top: 80px;
-    }
-
     .About_content {
         text-align: justify;
         display: flex;

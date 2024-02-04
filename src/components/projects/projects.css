@@ -1,4 +1,18 @@
 #Projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     letter-spacing: 2px;
-    margin: 50px 10% 0 10%;
+    min-height: 100vh;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #Projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        letter-spacing: 2px;
+        min-height: 100vh;
+    }
 }

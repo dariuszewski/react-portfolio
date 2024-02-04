@@ -40,4 +40,9 @@
   :root {
     padding: 0 3%;
   }
+
+  .section_title {
+    margin-top: 60px;
+    font-size: 15px;
+  }
 }

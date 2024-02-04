@@ -24,15 +24,22 @@ export default function MediaCard({
     <div className="card-frame">
       <Card
         sx={{
-          maxWidth: "95%",
+          maxWidth: {
+            xs: "100%", // 100% width on extra-small (and by default, smaller) screens
+            lg: "95%", // 95% width on large screens
+          },
           backgroundImage:
             "linear-gradient(to top, rgb(33, 33, 33), rgb(10, 0, 48))",
         }}
       >
         <CardMedia
-          sx={{ height: 240 }}
+          sx={{
+            height: {
+              xs: 180,
+              lg: 240,
+            },
+          }}
           image={`src/assets/projects/${repoName}.png`}
-          title="green iguana"
         />
         <CardContent>
           <div className="language">{language}</div>

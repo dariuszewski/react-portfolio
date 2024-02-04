@@ -5,7 +5,7 @@ import AboutImg from "./AboutImg";
 export default function About() {
   return (
     <div id="About">
-      <h3 className="About_title">A few words about me...</h3>
+      <h3 className="section_title">A few words about me...</h3>
       <div className="About_content">
         <img
           src="src/assets/me.png"
