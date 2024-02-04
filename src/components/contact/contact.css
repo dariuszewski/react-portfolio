@@ -1,4 +1,28 @@
 #Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     letter-spacing: 2px;
-    margin: 50px 8.5% 0 8.5%;
+    min-height: 80vh;
+    width: 100%;
+}
+
+.Contact_section_title {
+    margin-top: 100px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #Contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        letter-spacing: 2px;
+        min-height: 80vh;
+    }
+
+    .Contact_section_title {
+        margin-top: 60px;
+        font-size: 15px;
+    }
 }

@@ -106,16 +106,8 @@ export default function Contact() {
     <div id="Contact">
       <Container component="main" maxWidth="xl">
         {" "}
-        <h3>Contact Me</h3>
-        {/* <Typography
-          component="h1"
-          variant="h5"
-          align="center"
-          sx={{ color: "white", marginY: 4 }}
-        >
-          Contact Me
-        </Typography> */}
-        <Box sx={{ mt: 8, color: "white" }}>
+        <h3 className="Contact_section_title">Contact Me</h3>
+        <Box sx={{ mt: 2, color: "white" }}>
           <Box component="form" noValidate onSubmit={handleSubmit}>
             <TextField
               required
@@ -197,19 +189,6 @@ export default function Contact() {
               </Button>
             </Box>
           </Box>
-        </Box>
-        <Divider sx={{ my: 4, bgcolor: "white" }} />
-        <Box sx={{ textAlign: "center", pb: 4, color: "white" }}>
-          <IconButton sx={{ fontSize: "2rem", mx: 2, color: "white" }}>
-            <WhatsAppIcon fontSize="inherit" />
-          </IconButton>
-          <IconButton sx={{ fontSize: "2rem", mx: 2, color: "white" }}>
-            <LinkedInIcon fontSize="inherit" />
-          </IconButton>
-          <IconButton sx={{ fontSize: "2rem", mx: 2, color: "white" }}>
-            <DeveloperModeIcon fontSize="inherit" />{" "}
-            {/* This icon is used as an example for Stack Overflow */}
-          </IconButton>
         </Box>
       </Container>
     </div>
