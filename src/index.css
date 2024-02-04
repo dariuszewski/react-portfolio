@@ -2,7 +2,7 @@
   --mainTextColor: rgba(255, 255, 255, 0.87);
   --hoverLinkColor: rgba(128, 177, 214, 0.87);
   color: rgba(255, 255, 255, 0.87);
-  background: linear-gradient(to top, rgb(11, 11, 11), rgb(10, 0, 48));
+  background: linear-gradient(to top, rgb(24, 24, 24), rgb(2, 0, 10));
   min-height: 100vh;
   /* Ensure it covers the full height */
   padding: 0 10%;
@@ -12,6 +12,7 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
+  scroll-behavior: smooth;
 }
 
 @keyframes slideInFromLeft {
@@ -37,18 +38,6 @@
 
 @media only screen and (max-width: 1024px) {
   :root {
-    --mainTextColor: rgba(255, 255, 255, 0.87);
-    --hoverLinkColor: rgba(128, 177, 214, 0.87);
-    color: rgba(255, 255, 255, 0.87);
-    background: linear-gradient(to top, rgb(11, 11, 11), rgb(10, 0, 48));
-    min-height: 100vh;
-    /* Ensure it covers the full height */
-    padding: 03%;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    color-scheme: light dark;
+    padding: 0 3%;
   }
 }

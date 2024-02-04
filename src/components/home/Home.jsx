@@ -25,7 +25,10 @@ export default function Home() {
           />
         </div>
         <div className="right">
-          <img className="home_img" src="src/assets/home4.png" alt="fail" />
+          <video className="home_img" autoPlay loop muted>
+            <source src="src/assets/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
