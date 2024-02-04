@@ -50,14 +50,14 @@ import { FaVuejs } from "react-icons/fa";
 export default function Skills() {
   return (
     <div id="Skills">
-      <h3>My Skills</h3>
+      <h3 className="Skills_section_title">My Skills</h3>
       <AccordionGroup
         variant="plain"
         transition="0.2s"
         sx={{
           width: { xs: "100%", sm: "100%" }, // 100% width on xs devices, and 80% starting from sm devices
           margin: "auto", // Automatically adjust margin to center the accordion
-          mx: { xs: "0%", sm: "0%" }, // 0% horizontal margin on xs, 10% starting from sm devices
+
           borderRadius: "md",
           [`& .${accordionDetailsClasses.content}.${accordionDetailsClasses.expanded}`]:
             {
@@ -113,7 +113,7 @@ export default function Skills() {
 
         <Accordion>
           <AccordionSummary>
-            <Avatar color="success">
+            <Avatar color="primary">
               <FaRobot />
             </Avatar>
             <ListItemContent>

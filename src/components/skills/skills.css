@@ -1,4 +1,27 @@
 #Skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     letter-spacing: 2px;
-    margin: 50px 10% 0 10%;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.Skills_section_title {
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #Skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        letter-spacing: 2px;
+        min-height: 100vh;
+    }
+
+    .Skills_section_title {
+        margin-top: 60px;
+        font-size: 15px;
+    }
 }
