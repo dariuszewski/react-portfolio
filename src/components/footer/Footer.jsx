@@ -7,9 +7,6 @@ import {
 } from "react-icons/fa";
 
 export default function Footer() {
-  // wa
-  const whatsAppNumber = "1234567890";
-  const whatsAppLink = `https://wa.me/${whatsAppNumber}`;
   // li
   const linkedInUrl = "https://www.linkedin.com/in/yourusername";
   // sa
@@ -22,14 +19,6 @@ export default function Footer() {
     <div>
       <Divider sx={{ my: 4, bgcolor: "white" }} />
       <Box sx={{ textAlign: "center", pb: 4, color: "white" }}>
-        <IconButton
-          sx={{ fontSize: "2rem", mx: 2, color: "white" }}
-          component="a"
-          href={whatsAppLink}
-          target="_blank"
-        >
-          <FaWhatsapp fontSize="inherit" />
-        </IconButton>
         <IconButton
           sx={{ fontSize: "2rem", mx: 2, color: "white" }}
           component="a"

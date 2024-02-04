@@ -121,7 +121,7 @@ export default function Skills() {
                 Programming
               </Typography>
               <Typography level="body-sm">
-                Programming languages and markdowns formats I know
+                Programming dialects I know
               </Typography>
             </ListItemContent>
           </AccordionSummary>
@@ -213,8 +213,8 @@ export default function Skills() {
                   </Typography>
                 </FormControl>
                 <Typography level="body-sm">
-                  I'm having my first professional experience with Django Rest
-                  Framework and I'm currently mastering it.
+                  I am gaining my first professional experience with the Django
+                  Rest Framework and am currently mastering it.
                 </Typography>
               </FormControl>
 
@@ -229,8 +229,9 @@ export default function Skills() {
                   </Typography>
                 </FormControl>
                 <Typography level="body-sm">
-                  I have both, academic and professional experience with Flask.
-                  For API, I use Flask-RESTx, but I'm happy to learn more.
+                  I have both academic and professional experience with Flask,
+                  using Flask-RESTx for APIs. I'm eager to expand my knowledge
+                  further.
                 </Typography>
               </FormControl>
             </Stack>
@@ -246,9 +247,7 @@ export default function Skills() {
               <Typography level="title-md" color="#ffffff">
                 Data
               </Typography>
-              <Typography level="body-sm">
-                Tools I used for data science, analysis and engineering
-              </Typography>
+              <Typography level="body-sm">Data tools</Typography>
             </ListItemContent>
           </AccordionSummary>
           <AccordionDetails>
@@ -264,7 +263,7 @@ export default function Skills() {
                   </Typography>
                 </FormControl>
                 <Typography level="body-sm">
-                  My Database Managment System of choice.
+                  My Database Management System of choice.
                 </Typography>
               </FormControl>
               <FormControl sx={{ gap: 1, color: "white" }}>
@@ -278,7 +277,7 @@ export default function Skills() {
                   </Typography>
                 </FormControl>
                 <Typography level="body-sm">
-                  I used this database multiple times in academics.
+                  I've' used this DBMS multiple times in academic settings.
                 </Typography>
               </FormControl>
               <FormControl sx={{ gap: 1, color: "white" }}>
@@ -292,8 +291,8 @@ export default function Skills() {
                   </Typography>
                 </FormControl>
                 <Typography level="body-sm">
-                  I participated in expanding and maintaining a data warehouse
-                  in Google Big Query.
+                  I participated in the expansion and maintenance of a data
+                  warehouse in Google BigQuery.
                 </Typography>
               </FormControl>
               <FormControl sx={{ gap: 1, color: "white" }}>
@@ -307,7 +306,7 @@ export default function Skills() {
                   </Typography>
                 </FormControl>
                 <Typography level="body-sm">
-                  I've buils multiple custom DAGs for a data warehouse using
+                  I've built multiple custom DAGs for a data warehouse using
                   Composer.
                 </Typography>
               </FormControl>
@@ -322,8 +321,8 @@ export default function Skills() {
                   </Typography>
                 </FormControl>
                 <Typography level="body-sm">
-                  I've used Pandas on various occasions in academia and
-                  professionally for many different purposes.
+                  I've used Pandas for various purposes in both academic and
+                  professional settings.
                 </Typography>
               </FormControl>
               <FormControl sx={{ gap: 1, color: "white" }}>
@@ -337,7 +336,7 @@ export default function Skills() {
                   </Typography>
                 </FormControl>
                 <Typography level="body-sm">
-                  Got some academic experience with it when working on
+                  I have some academic experience with it, primarily in
                   real-estate analysis.
                 </Typography>
               </FormControl>
@@ -352,7 +351,7 @@ export default function Skills() {
                   </Typography>
                 </FormControl>
                 <Typography level="body-sm">
-                  I've used excel many times in academics and professionally.
+                  I've used Excel many times in academics and professionally.
                 </Typography>
               </FormControl>
             </Stack>
@@ -383,8 +382,8 @@ export default function Skills() {
                   </Typography>
                 </FormControl>
                 <Typography level="body-sm">
-                  This page is my final project for Introduction To React Course
-                  at the university.
+                  This page serves as my final project for the Introduction to
+                  React course at the university.
                 </Typography>
               </FormControl>
               <FormControl sx={{ gap: 1, color: "white" }}>
@@ -398,8 +397,8 @@ export default function Skills() {
                   </Typography>
                 </FormControl>
                 <Typography level="body-sm">
-                  During university classes, I participated in 2 projects using
-                  Vue3 and Vuetify. A Kanban Board and a Restaurant PWA.
+                  During my university classes, I participated in two projects
+                  using Vue3 and Vuetify: a Kanban Board and a Restaurant PWA.
                 </Typography>
               </FormControl>
             </Stack>
