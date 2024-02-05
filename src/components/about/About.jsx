@@ -1,6 +1,4 @@
 import "./about.css";
-import AboutText from "./AboutText";
-import AboutImg from "./AboutImg";
 
 import meImage from "../../assets/me.png";
 import aboutImage from "../../assets/about.png";

@@ -30,13 +30,6 @@ export default function CarouselRatio() {
 
   const username = "dariuszewski";
 
-  // const repoNamesToFilter = [
-  //   "flaskr_blog",
-  //   "kanban-managment",
-  //   "real-estate-scraper",
-  //   "vehicle_routing_problem",
-  // ];
-
   const repoData = {
     flaskr_blog: {
       demo: "https://flaskr-5gv9.onrender.com",

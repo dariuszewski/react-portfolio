@@ -1,4 +1,3 @@
-import MediaCard from "./Card";
 import CarouselRatio from "./Carousel";
 import "./projects.css";
 
