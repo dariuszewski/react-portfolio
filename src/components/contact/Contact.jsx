@@ -1,17 +1,5 @@
 import React, { useState } from "react";
-import {
-  TextField,
-  Button,
-  Container,
-  Typography,
-  Box,
-  Divider,
-  IconButton,
-} from "@mui/material";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import DeveloperModeIcon from "@mui/icons-material/DeveloperMode"; // Assuming this for Stack Overflow
-
+import { TextField, Button, Container, Box } from "@mui/material";
 import "./contact.css";
 
 export default function Contact() {
@@ -20,7 +8,6 @@ export default function Contact() {
     email: "",
     subject: "",
     message: "",
-    captcha: "",
   });
   const [errors, setErrors] = useState({});
 
@@ -32,8 +19,6 @@ export default function Contact() {
       : "Email is not valid.";
     tempErrors.subject = formValues.subject ? "" : "This field is required.";
     tempErrors.message = formValues.message ? "" : "This field is required.";
-    tempErrors.captcha =
-      formValues.captcha === "5" ? "" : "The answer is not correct.";
     setErrors(tempErrors);
 
     return Object.values(tempErrors).every((x) => x === "");
@@ -50,17 +35,24 @@ export default function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (validate()) {
-      // Implement submission logic here
-      console.log(formValues);
-      // Reset form and errors after successful validation
+      console.log("trigg");
+      // Construct the mailto link
+      const mailtoLink = `mailto:example@example.com?subject=${encodeURIComponent(
+        formValues.subject
+      )}&body=${encodeURIComponent(
+        `Name: ${formValues.name}\nEmail: ${formValues.email}\nMessage: ${formValues.message}`
+      )}`;
+
+      // Open the default mail client
+      window.location.href = mailtoLink;
+
+      // Reset the form here
       setFormValues({
         name: "",
         email: "",
         subject: "",
         message: "",
-        captcha: "",
       });
-      setErrors({});
     }
   };
 
@@ -70,7 +62,6 @@ export default function Contact() {
       email: "",
       subject: "",
       message: "",
-      captcha: "",
     });
     setErrors({});
   };

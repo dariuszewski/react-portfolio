@@ -1,10 +1,5 @@
 import { Box, Divider, IconButton } from "@mui/material";
-import {
-  FaWhatsapp,
-  FaLinkedin,
-  FaStackOverflow,
-  FaGithub,
-} from "react-icons/fa";
+import { FaLinkedin, FaStackOverflow, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   // li
