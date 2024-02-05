@@ -13,7 +13,7 @@ import Avatar from "@mui/joy/Avatar";
 import FormControl from "@mui/joy/FormControl";
 import ListItemContent from "@mui/joy/ListItemContent";
 
-import "./Skills.css";
+import "./skills.css";
 
 // Language Section Icons
 import { LuLanguages } from "react-icons/lu";
