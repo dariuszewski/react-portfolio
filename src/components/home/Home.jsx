@@ -1,6 +1,8 @@
 import "./home.css";
 import Typewriter from "typewriter-effect";
 
+import homeVideo from "../../assets/video.mp4";
+
 export default function Home() {
   return (
     <div id="Home">
@@ -26,7 +28,7 @@ export default function Home() {
         </div>
         <div className="right">
           <video className="home_img" autoPlay loop muted>
-            <source src="src/assets/video.mp4" type="video/mp4" />
+            <source src={homeVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

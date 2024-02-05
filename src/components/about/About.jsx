@@ -2,16 +2,15 @@ import "./about.css";
 import AboutText from "./AboutText";
 import AboutImg from "./AboutImg";
 
+import meImage from "../../assets/me.png";
+import aboutImage from "../../assets/about.png";
+
 export default function About() {
   return (
     <div id="About">
       <h3 className="section_title">A few words about me...</h3>
       <div className="About_content">
-        <img
-          src="src/assets/me.png"
-          alt="First Image"
-          className="About_left-image"
-        />
+        <img src={meImage} alt="First Image" className="About_left-image" />
         <p>
           Hello! I'm a recent computer science graduate with specialization in
           intelligent systems from the University of Economics in Poland. My
@@ -28,7 +27,7 @@ export default function About() {
           A true master is an eternal student.
         </blockquote>
         <img
-          src="src/assets/about2.png"
+          src={aboutImage}
           alt="Second Image"
           className="About_right-image"
         />

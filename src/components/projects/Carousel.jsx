@@ -3,6 +3,11 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import MediaCard from "./Card";
 
+import flaskrBlogImage from "../../assets/projects/flaskr_blog.png";
+import kanbanManagmentImage from "../../assets/projects/kanban-managment.png";
+import realEstateScraperImage from "../../assets/projects/real-estate-scraper.png";
+import vrpImage from "../../assets/projects/vehicle_routing_problem.png";
+
 export default function CarouselRatio() {
   const responsive = {
     superLargeDesktop: {
@@ -25,20 +30,30 @@ export default function CarouselRatio() {
 
   const username = "dariuszewski";
 
-  const repoNamesToFilter = [
-    "flaskr_blog",
-    "kanban-managment",
-    "real-estate-scraper",
-    "vehicle_routing_problem",
-  ];
+  // const repoNamesToFilter = [
+  //   "flaskr_blog",
+  //   "kanban-managment",
+  //   "real-estate-scraper",
+  //   "vehicle_routing_problem",
+  // ];
 
-  const demos = {
-    flaskr_blog: "https://flaskr-5gv9.onrender.com",
-    "kanban-managment": "https://github.com/dariuszewski/kanban-managment",
-    "real-estate-scraper":
-      "https://github.com/dariuszewski/real-estate-scraper",
-    vehicle_routing_problem:
-      "https://github.com/dariuszewski/vehicle_routing_problem/blob/master/notebook.ipynb",
+  const repoData = {
+    flaskr_blog: {
+      demo: "https://flaskr-5gv9.onrender.com",
+      image: flaskrBlogImage,
+    },
+    "kanban-managment": {
+      demo: "https://github.com/dariuszewski/kanban-managment",
+      image: kanbanManagmentImage,
+    },
+    "real-estate-scraper": {
+      demo: "https://github.com/dariuszewski/real-estate-scraper",
+      image: realEstateScraperImage,
+    },
+    vehicle_routing_problem: {
+      demo: "https://github.com/dariuszewski/vehicle_routing_problem/blob/master/notebook.ipynb",
+      image: vrpImage,
+    },
   };
 
   const [loading, setLoading] = useState(true);
@@ -54,7 +69,7 @@ export default function CarouselRatio() {
         if (response.ok) {
           const data = await response.json();
           const filteredProfile = data.filter((repo) =>
-            repoNamesToFilter.includes(repo.name)
+            Object.keys(repoData).includes(repo.name)
           );
           setProfile(filteredProfile);
           console.log(profile);
@@ -82,7 +97,8 @@ export default function CarouselRatio() {
               description={repo.description}
               language={repo.language}
               html_url={repo.html_url}
-              demo={demos[repo.name]}
+              demo={repoData[repo.name]["demo"]}
+              image={repoData[repo.name]["image"]}
             />
           ))
         )}

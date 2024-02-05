@@ -15,6 +15,7 @@ export default function MediaCard({
   language,
   html_url,
   demo,
+  image,
 }) {
   const handleButtonClick = (url) => {
     window.open(url, "_blank"); // Opens the provided URL in a new tab
@@ -39,7 +40,7 @@ export default function MediaCard({
               lg: 240,
             },
           }}
-          image={`src/assets/projects/${repoName}.png`}
+          image={image}
         />
         <CardContent>
           <div className="language">{language}</div>
