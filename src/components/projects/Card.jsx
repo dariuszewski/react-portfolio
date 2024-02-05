@@ -36,7 +36,7 @@ export default function MediaCard({
         <CardMedia
           sx={{
             height: {
-              xs: 180,
+              xs: 240,
               lg: 240,
             },
           }}
