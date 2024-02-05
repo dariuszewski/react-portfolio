@@ -56,9 +56,15 @@
 }
 
 
+.home_video {
+    margin-right: auto;
+    max-height: 390px;
+}
+
 .home_img {
     margin-right: auto;
     max-height: 390px;
+    display: none;
 }
 
 
@@ -123,10 +129,19 @@
 
 
 
+    .home_video {
+        max-width: 100%;
+        min-width: 100%;
+        justify-content: center;
+        margin-top: 40px;
+        display: none;
+    }
+
     .home_img {
         max-width: 100%;
         min-width: 100%;
         justify-content: center;
         margin-top: 40px;
+        display: block;
     }
 }

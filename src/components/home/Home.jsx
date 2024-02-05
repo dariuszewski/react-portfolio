@@ -2,6 +2,7 @@ import "./home.css";
 import Typewriter from "typewriter-effect";
 
 import homeVideo from "../../assets/video.mp4";
+import homeImage from "../../assets/home_image.png";
 
 export default function Home() {
   return (
@@ -27,10 +28,11 @@ export default function Home() {
           />
         </div>
         <div className="right">
-          <video className="home_img" autoPlay loop muted>
+          <video className="home_video" autoPlay loop muted>
             <source src={homeVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          <img src={homeImage} alt="Fallback Display" className="home_img" />
         </div>
       </div>
     </div>
