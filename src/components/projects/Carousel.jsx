@@ -7,6 +7,7 @@ import flaskrBlogImage from "../../assets/projects/flaskr_blog.png";
 import kanbanManagmentImage from "../../assets/projects/kanban-managment.png";
 import realEstateScraperImage from "../../assets/projects/real-estate-scraper.png";
 import vrpImage from "../../assets/projects/vehicle_routing_problem.png";
+import portfolioImage from "../../assets/projects/react-portfolio.png";
 
 export default function CarouselRatio() {
   const responsive = {
@@ -46,6 +47,10 @@ export default function CarouselRatio() {
     vehicle_routing_problem: {
       demo: "https://github.com/dariuszewski/vehicle_routing_problem/blob/master/notebook.ipynb",
       image: vrpImage,
+    },
+    "react-portfolio": {
+      demo: "https://dariuszewski.github.io/react-portfolio/",
+      image: portfolioImage,
     },
   };
 
